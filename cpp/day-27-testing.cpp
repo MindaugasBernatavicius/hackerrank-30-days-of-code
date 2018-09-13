@@ -23,33 +23,38 @@ int minimum_index(vector<int> seq) {
 class TestDataEmptyArray {
 public:
     static vector<int> get_array() {
-        // complete this function
+        vector<int> v;
+        return v;
     }
-
 };
 
 class TestDataUniqueValues {
 public:
     static vector<int> get_array() {
-        // complete this function
+        vector<int> uniqv;
+        uniqv.push_back(5);
+        uniqv.push_back(10);
+        return uniqv;
     }
 
     static int get_expected_result() {
-        // complete this function
+        return 0;
     }
-
 };
 
 class TestDataExactlyTwoDifferentMinimums {
 public:
     static vector<int> get_array() {
-        // complete this function
+        vector<int> uniqv;
+        uniqv.push_back(10);
+        uniqv.push_back(5);
+        uniqv.push_back(5);
+        return uniqv;
     }
 
     static int get_expected_result() {
-        // complete this function
+        return 1;
     }
-
 };
 
 void TestWithEmptyArray() {
