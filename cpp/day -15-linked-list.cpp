@@ -38,8 +38,7 @@ class Solution {
     }
 };
 
-int main()
-{
+int main() {
 	Node* head=NULL;
 	Solution mylist;
 	int T, data; cin >> T;
