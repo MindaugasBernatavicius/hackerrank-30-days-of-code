@@ -16,12 +16,12 @@ class Calculator : public AdvancedArithmetic {
     public:
         int divisorSum(int n) {
             int divisorSum = 0;
-            for (int i=1; i<=sqrt(n); i++) {
-                if (n%i == 0){
-                    if (n/i == i)
+            for (int i = 1; i <= sqrt(n); i++) {
+                if (n % i == 0){
+                    if (n / i == i)
                         divisorSum += i;
                     else
-                        divisorSum += i + n/i;
+                        divisorSum += i + n / i;
                 }
             }
             return divisorSum;
