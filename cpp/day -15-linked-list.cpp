@@ -41,13 +41,12 @@ class Solution {
 int main()
 {
 	Node* head=NULL;
-  	Solution mylist;
-    int T,data;
-    cin>>T;
-    while(T-->0) {
-        cin>>data;
-        head=mylist.insert(head,data);
-    }
+	Solution mylist;
+	int T, data; cin >> T;
+	while(T-->0) {
+		cin >> data;
+		head=mylist.insert(head,data);
+	}
 	mylist.display(head);
-    return 0;
+	return 0;
 }
