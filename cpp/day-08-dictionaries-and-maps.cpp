@@ -4,21 +4,18 @@
 #include <iostream>
 #include <algorithm>
 #include <unordered_map>
+
 using namespace std;
 
-
-int main()
-{
+int main() {
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
     unsigned int n = 0;
-    cin >> n;
-    cin.ignore();
+    cin >> n; cin.ignore();
     
     unordered_map<string, string> phoneBook;
     string kv, firstname, phoneNumber;
     char pos;
-    while(n)
-    {
+    while(n) {
         getline(cin, kv);
         pos = kv.find_first_of(' ');
         firstname = kv.substr(0, pos),
@@ -31,8 +28,7 @@ int main()
     string q, prevq;
     unordered_map<string, string>::const_iterator got;
 
-    while(getline(cin, q))
-    {
+    while(getline(cin, q)) {
         got = phoneBook.find(q);
         if(got == phoneBook.end())
             std::cout << "Not found" << endl;
