@@ -16,7 +16,7 @@ class Node {
 };
 class Solution {
     public:
-  		Node* insert(Node* root, int data) {
+        Node* insert(Node* root, int data) {
             if(root == NULL) {
                 return new Node(data);
             }
@@ -29,10 +29,10 @@ class Solution {
                 else {
                     cur = insert(root->right, data);
                     root->right = cur;
-               }
+                }
 
-               return root;
-           }
+                return root;
+            }
         }
         
         int getHeight(Node* root) {
@@ -56,9 +56,7 @@ class Solution {
 int main() {
     Solution myTree;
     Node* root = NULL;
-    int t;
-    int data;
-
+    int t, data;
     cin >> t;
 
     while(t-- > 0) {
