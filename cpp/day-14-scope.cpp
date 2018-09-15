@@ -25,9 +25,7 @@ class Difference {
 }; // End of Difference class
 
 int main() {
-    int N;
-    cin >> N;
-    
+    int N; cin >> N;
     vector<int> a;
     
     for (int i = 0; i < N; i++) {
@@ -36,9 +34,7 @@ int main() {
     }
     
     Difference d(a);
-    
     d.computeDifference();
-    
     cout << d.maximumDifference;
     
     return 0;
