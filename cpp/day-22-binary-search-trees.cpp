@@ -14,13 +14,13 @@ class Node {
             right = NULL;
         }
 };
+
 class Solution {
     public:
         Node* insert(Node* root, int data) {
             if(root == NULL) {
                 return new Node(data);
-            }
-            else {
+            } else {
                 Node* cur;
                 if(data <= root->data) {
                     cur = insert(root->left, data);
@@ -30,7 +30,6 @@ class Solution {
                     cur = insert(root->right, data);
                     root->right = cur;
                 }
-
                 return root;
             }
         }
