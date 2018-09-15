@@ -9,10 +9,10 @@ using namespace std;
 class Difference {
     private:
         vector<int> elements;
-  
-  	public:
+
+    public:
         int maximumDifference;
-        
+
         Difference(vector<int> a){
             this->elements = a;
         }
