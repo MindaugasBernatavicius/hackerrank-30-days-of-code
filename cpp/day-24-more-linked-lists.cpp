@@ -4,7 +4,9 @@
 #include <vector>
 #include <iostream>
 #include <algorithm>
+
 using namespace std;
+
 class Node {
 	public:
 		int data;
@@ -14,6 +16,7 @@ class Node {
 			next = NULL;
 		}
 };
+
 class Solution {
 	public:
 		Node *removeDuplicates(Node *head) {
