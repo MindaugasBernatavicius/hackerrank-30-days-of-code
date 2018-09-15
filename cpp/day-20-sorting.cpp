@@ -8,8 +8,7 @@
 // avoid name collision w sstream::swap 
 namespace S {
     template<typename T>
-    void swap(T &a, T &b)
-    {
+    void swap(T &a, T &b) {
         T t = a;
         a = b;
         b = t;
@@ -19,8 +18,7 @@ namespace S {
 using namespace std;
 using namespace S;
 
-int bubbleSort(vector<int> &v)
-{
+int bubbleSort(vector<int> &v) {
     int totalSwaps = 0;
     for (int i = 0; i < v.size(); i++) {
         // Track number of elements swapped during a single array traversal
@@ -39,12 +37,10 @@ int bubbleSort(vector<int> &v)
         if (numberOfSwaps == 0)
             break;
     }
-    
     return totalSwaps;
 }
 
-int main()
-{
+int main() {
     int n; cin >> n; cin.ignore();
     
     string nums_string;
@@ -53,7 +49,7 @@ int main()
     
     vector<int> v; int temp;
     while(iss >> temp)
-      v.push_back(temp);
+        v.push_back(temp);
     
     int totalSwaps = bubbleSort(v);
     
