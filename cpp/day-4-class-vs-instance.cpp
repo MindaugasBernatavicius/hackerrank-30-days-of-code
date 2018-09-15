@@ -1,7 +1,7 @@
-using namespace std;
 #include <iostream>
+using namespace std;
 
-class Person{
+class Person {
     public:
         int age;
         Person(int initialAge);
@@ -9,43 +9,42 @@ class Person{
         void yearPasses();
 };
 
-Person::Person(int initialAge){
+Person::Person(int initialAge) {
     // Add some more code to run some checks on initialAge
-    if(initialAge < 0){
+    if(initialAge < 0) {
         this->age = 0;
         cout << "Age is not valid, setting age to 0.\n";
-    }else{
+    } else {
         this->age = initialAge;
     }
 }
 
-void Person::amIOld(){
+void Person::amIOld() {
     // Do some computations in here and print out the correct statement to the console 
-    if(this->age < 13){
+    if(this->age < 13) {
         cout << "You are young.\n";
-    }else if(this->age >= 13 && this->age < 18){
+    } else if(this->age >= 13 && this->age < 18) {
         cout << "You are a teenager.\n";
-    }else{
+    } else {
         cout << "You are old.\n";
     }
 }
 
-void Person::yearPasses(){
+void Person::yearPasses() {
     // Increment the age of the person in here
     this->age++;
 }
 
-int main(){
+int main() {
     int t, age;
     cin >> t;
     for(int i=0; i < t; i++) {
-    	cin >> age;
-        Person p(age);
-        p.amIOld();
-        for(int j=0; j < 3; j++) {
-        	p.yearPasses(); 
-        }
-        p.amIOld();
+		cin >> age;
+		Person p(age);
+		p.amIOld();
+		for(int j=0; j < 3; j++)
+			p.yearPasses(); 
+		p.amIOld();
 		cout << '\n';
     }
     return 0;
