@@ -30,10 +30,10 @@ class Solution {
     }
     
     void display(Node *head) {
-        Node *start=head;
+        Node *start = head;
         while(start) {
-            cout<<start->data<<" ";
-            start=start->next;
+            cout << start->data << " ";
+            start = start->next;
         }
     }
 };
@@ -43,9 +43,9 @@ int main()
 	Node* head=NULL;
 	Solution mylist;
 	int T, data; cin >> T;
-	while(T-->0) {
+	while(T-- > 0) {
 		cin >> data;
-		head=mylist.insert(head,data);
+		head = mylist.insert(head,data);
 	}
 	mylist.display(head);
 	return 0;
