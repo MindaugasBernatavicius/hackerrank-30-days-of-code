@@ -17,7 +17,7 @@ class Solution {
     public:
     Node* insert(Node * head, int data) {
         //Create head when passed head is NULL
-        if(head == NULL){
+        if(head == NULL) {
             Node * head = new Node(data);
             return head;
         }
